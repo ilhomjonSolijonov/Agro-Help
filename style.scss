@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+// root
+:root{
+    --color-fff: #fff;
+    --color-title: #222222;
+    --bg-color: #F3FBF8;
+    --btn-bg: #09A66D;
+}
+
+.body{
+    width: 100%;
+    height: auto;
+    menu{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu__container{
+            width: 95%;
+            max-width: 1240px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .menu__links-section{
+                display: flex;
+                justify-content: space-between;
+                .menu__link{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: var(--color-title);
+                        padding: 0 15px 0 0;
+                    }
+                }
+            }
+            .menu__logo{
+                width: 57px;
+                height: 56px;
+                .menu__img-logo{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .menu__sign{
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .menu__search, .menu__korzinka{
+                    margin-right: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    width: 40px;
+                    background-color: var(--bg-color);
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    i{
+                        color: var(--color-title);
+                        font-size: 18px;
+                    }
+                }
+                .menu__button{
+                    background: var(--btn-bg);
+                    color: var(--color-fff);
+                    border: none;
+                    padding: 10px 35px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }
+            }
+        }
+    }
+}
