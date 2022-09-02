@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 // root
 :root{
     --body-bg: #FFFFFF;
@@ -73,6 +76,7 @@
                     -moz-border-radius: 50%;
                     -ms-border-radius: 50%;
                     -o-border-radius: 50%;
+                    cursor: pointer;
                     i{
                         color: var(--color-title);
                         font-size: 18px;
@@ -93,6 +97,11 @@
                     -ms-border-radius: 8px;
                     -o-border-radius: 8px;
                 }
+                .menu__button:hover{
+                    cursor: pointer;
+                    transform: scale(1.01);
+                    transition: all 400ms ;
+}
             }
         }
     }
@@ -143,6 +152,7 @@
                     display: flex;
                     align-items: center;
                     margin: 0 auto;
+                    cursor: pointer;
                     .header__order-text{
                         color: var(--color-title);
                         font-style: normal;
@@ -349,6 +359,93 @@
                     }
                 }
             }
+        }
+    }
+    .services{
+        margin: 100px 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background-color: var(--bg-color);
+        position: relative;
+        .services__conatiner{
+            max-width: 1240px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: 100px 0;
+            .services__left{
+                list-style: none;
+                img{
+                    object-fit: cover;
+                    width: 600px;
+                    height: 600px;
+                }
+            }
+            .services__right{
+                display: flex;
+                flex-direction: column;
+                .services__title{
+                    margin: 50px 0 0 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 65px;
+                    line-height: 90px;
+                    color: var(--color-title);
+                }
+                .services__subtitle{
+                    margin: 20px 0 0 0 ;
+                    margin-left: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: var(--color-text);
+                }
+                .services__order{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    margin: 20px 0 0 20px;
+                    .services__order-text{
+                        color: var(--color-title);
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 30px;
+                        margin: 0 10px 0 0;
+                    }
+                    .services__order-button{
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--btn-bg);
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        i{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 22px;
+                            color: var(--bg-color);
+                        }
+                    }
+                }
+            }
+        }
+        .services__laeves{
+            width: 540px;
+            height: auto;
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
     }
 }

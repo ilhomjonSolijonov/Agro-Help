@@ -6,6 +6,10 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --body-bg: #FFFFFF;
   --color-text: #555555;
@@ -107,6 +111,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  cursor: pointer;
 }
 .body menu .menu__container .menu__sign .menu__search i, .body menu .menu__container .menu__sign .menu__korzinka i {
   color: var(--color-title);
@@ -126,6 +131,13 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+.body menu .menu__container .menu__sign .menu__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 .body header {
   width: 100%;
@@ -192,6 +204,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  cursor: pointer;
 }
 .body header .header__container .header__up .header__order .header__order-text {
   color: var(--color-title);
@@ -485,4 +498,121 @@
 .body .about .about__container .about__content .about__right img {
   width: 600px;
   height: 600px;
+}
+.body .services {
+  margin: 100px 0 0 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--bg-color);
+  position: relative;
+}
+.body .services .services__conatiner {
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 0;
+}
+.body .services .services__conatiner .services__left {
+  list-style: none;
+}
+.body .services .services__conatiner .services__left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 600px;
+  height: 600px;
+}
+.body .services .services__conatiner .services__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.body .services .services__conatiner .services__right .services__title {
+  margin: 50px 0 0 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 90px;
+  color: var(--color-title);
+}
+.body .services .services__conatiner .services__right .services__subtitle {
+  margin: 20px 0 0 0;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+.body .services .services__conatiner .services__right .services__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 20px 0 0 20px;
+}
+.body .services .services__conatiner .services__right .services__order .services__order-text {
+  color: var(--color-title);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 10px 0 0;
+}
+.body .services .services__conatiner .services__right .services__order .services__order-button {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--btn-bg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.body .services .services__conatiner .services__right .services__order .services__order-button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  color: var(--bg-color);
+}
+.body .services .services__laeves {
+  width: 540px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
