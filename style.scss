@@ -621,4 +621,75 @@ html{
             }
         }
     }
+    // footer
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .footer__container{
+            width: 100%;
+            max-width: 1240px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 100px 0 50px;
+            .footer__info{
+                list-style: none;
+                .foot__logo{
+                    width: 70px;
+                    height: 70px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .footer__subtitle{
+                    color: var(--color-text);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    width: 345.36px;
+                    height: 150px;
+                }
+            }
+            .navigation, .resources, .foot-contact{
+                width: auto;
+                height: auto;
+                .nav__title{
+                    list-style: none;
+                    color: var(--color-title);
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 31px;
+                    margin: 0 0 20px;
+                }
+                li{
+                    margin: 20px 0;
+                    list-style: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: var(--color-text);
+                }
+            }
+            .foot-contact{
+                .social-nets{
+                    display: flex;
+                    li{ 
+                        list-style: none;
+                        margin-right: 40px;
+                        font-size: 30px;
+                        color: var(--color-title);
+                    }
+                }
+            }
+        }
+    }
 }
