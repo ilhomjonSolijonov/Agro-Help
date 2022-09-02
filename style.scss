@@ -21,6 +21,7 @@ html{
     width: 100%;
     height: auto;
     background-color: var(--body-bg);
+    // menu
     menu{
         width: 100%;
         height: 100px;
@@ -105,6 +106,7 @@ html{
             }
         }
     }
+    // header of web-site
     header{
         width: 100%;
         height: auto;
@@ -251,6 +253,7 @@ html{
         }
         
     }
+    // about section
     .about{
         width: 100%;
         height: auto;
@@ -361,6 +364,7 @@ html{
             }
         }
     }
+    // services section
     .services{
         margin: 100px 0 0 0;
         width: 100%;
@@ -448,6 +452,7 @@ html{
             bottom: 0;
         }
     }
+    // menu section
     .menu{
         margin: 100px 0 0 0;
         width: 100%;
@@ -552,6 +557,66 @@ html{
                     width: auto;
                     height: 444.82px;
                     object-fit: cover;
+                }
+            }
+        }
+    }
+    // contact secction
+    .contact{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        .contact__container{
+            margin: 100px 0 100px 0;
+            max-width: 1240px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .contact__left{
+                list-style: none;
+                img{
+                    width: auto;
+                    height: 496.06px;
+                    object-fit: cover;
+                    margin: 0 100px;
+                }
+            }
+            .contact__right{
+                list-style: none;
+                width: auto;
+                height: auto;
+                margin: 0 0 0 50px;
+                .contact__btn{
+                    margin: 40px 0 0 0;
+                    border-radius: 50px;
+                    background-color: var(--bg-color);
+                    color: var(--color-title);
+                    padding: 15px 45px;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+                .contact__title{
+                    margin: 20px 0 0 0;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 70px;
+                    line-height: 90px;
+                    color: var(--color-title);
+                }
+                .contact__subtitle{
+                    width: 574.18px;
+                    height: 90px;
+                    color: var(--color-text);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin: 30px 0 0;
                 }
             }
         }
